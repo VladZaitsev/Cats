@@ -7,7 +7,7 @@ package object_oriented_programming;
  */
 public class PiggyBankCat extends Cat {
 
-    public void PiggyBankCat(){
+    public PiggyBankCat(){
         purrBehavior = new NoPurrBehavior();
         jumpBehavior = new NoJumpBehavior();
         meowBehavior = new NoMeowBehavior();
