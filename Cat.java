@@ -3,24 +3,25 @@ package object_oriented_programming;
 /**
  * Базовый класс, который определяет базовое поведение всех котиков.
  */
-public class Cat {
+public adstract class Cat {
 
+    PurrBehavior purrBehavior;
+    MeowBehavior meowBehavior;
+    JumpBehavior jumpBehavior;
     /**
      * Данный метод, для каждого конкретного котика, должен быть свой.
      */
-    public void display() {
-        throw new UnsupportedOperationException();
+    public abstract void display();
+
+    public void performPurr() {
+        purrBehavior.purr();
     }
 
-    public void purr() {
-        System.out.println("This cat can purr, mrrrrr...");
+    public void performMeow() {
+        meowBehavior.meow();
     }
 
-    public void meow() {
-        System.out.println("Does this cat meow? - Meow!");
-    }
-
-    public void jump() {
-        System.out.println("How does this cat jump? - Jumps high");
+    public void performJump() {
+        jumpBehavior.jump();
     }
 } 
