@@ -1,5 +1,5 @@
 package object_oriented_programming;
 
-intarface PurrBehavior{
+interface PurrBehavior{
     public void purr();
 }
