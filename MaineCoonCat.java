@@ -7,6 +7,12 @@ package object_oriented_programming;
  */
 public class MaineCoonCat extends Cat {
 
+       public MaineCoonCat(){
+        purrBehavior = new GeneralPurrBehavior();
+        jumpBehavior = new HighJumpBehavior();
+        meowBehavior = new GeneralMeowBehavior();
+    }
+    
     @Override
     public void display() {
         //display implementation
