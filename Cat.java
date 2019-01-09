@@ -26,14 +26,14 @@ public adstract class Cat {
     }
     
     public void setPurrBehavior(PurrBehavior behavior){
-        purrBehavior=behavior();
+        purrBehavior=behavior;
     }
     
     public void setMeowBehavior(MeowBehavior behavior){
-        meowBehavior=behavior();
+        meowBehavior=behavior;
     }
     
     public void setJumpBehavior(JumpBehavior behavior){
-        jumpBehavior=behavior();
+        jumpBehavior=behavior;
     }
 } 
