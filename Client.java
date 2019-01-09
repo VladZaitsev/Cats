@@ -19,9 +19,9 @@ public class Client {
 
         for (Cat cat : cats) {
             cat.display();
-            cat.purr();
-            cat.meow();
-            cat.jump();
+            cat.performPurr();
+            cat.performMeow();
+            cat.performJump();
             System.out.println();
         }
     }
