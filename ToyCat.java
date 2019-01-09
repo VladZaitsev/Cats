@@ -7,7 +7,7 @@ package object_oriented_programming;
  */
 public class ToyCat extends Cat {
 
-    public void ToyCat(){
+    public ToyCat(){
         purrBehavior = new NoPurrBehavior();
         jumpBehavior = new NoJumpBehavior();
         meowBehavior = new GeneralMeowBehavior();
