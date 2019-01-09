@@ -7,6 +7,12 @@ package object_oriented_programming;
  */
 public class PiggyBankCat extends Cat {
 
+    public void PiggyBankCat(){
+        purrBehavior = new NoPurrBehavior();
+        jumpBehavior = new NoJumpBehavior();
+        meowBehavior = new NoMeowBehavior();
+    }
+    
     @Override
     public void display() {
         //display implementation
@@ -14,24 +20,4 @@ public class PiggyBankCat extends Cat {
         System.out.println("Piggy bank cat is displayed, it can keep money");
     }
 
-    @Override
-    public void purr() {
-        //do nothing
-
-        System.out.println("This cat does not purr!");
-    }
-
-    @Override
-    public void meow() {
-        //do nothing
-
-        System.out.println("This cat does not mew!");
-    }
-
-    @Override
-    public void jump() {
-        //do nothing
-
-        System.out.println("This cat does not jump!");
-    }
 }
